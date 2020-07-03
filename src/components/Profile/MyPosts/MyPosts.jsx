@@ -4,7 +4,10 @@ import s from "./MyPosts.module.css"
 const MyPosts = () => {
 	return (
 		<div>
-			<div>my posts</div>
+			<textarea></textarea>
+			<button>+</button>
+			<button>-</button>
+
 
 			<div className={s.item}>new post</div>
 			<div>post1</div>
