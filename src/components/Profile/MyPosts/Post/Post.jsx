@@ -5,7 +5,7 @@ const Post = () => {
 	return (
 		<div>
 			<div className={s.item}>new post</div>
-				</div>
+		</div>
 
 
 
