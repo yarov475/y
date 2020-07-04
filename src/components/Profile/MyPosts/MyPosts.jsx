@@ -8,15 +8,18 @@ const MyPosts = () => {
 			My Posts
 			<div>
 				<textarea></textarea>
-				<button>+</button>
-			</div>
 
+			</div>
+			<div className="">
+				<button>Add Post</button>
+				<br></br>
+			</div>
 
 			<div className={s.posts}>
 
-				<Post />
-				<Post />
-				<Post />
+				<Post message="How are you" />
+				<Post message="React is awesome" />
+			
 			</div>
 		</div>
 
