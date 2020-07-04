@@ -1,11 +1,16 @@
 .nav {
 	color: #ffffff;
 	grid-area: n;
-	background-color: #b3e5fc;
+ background-color: #b3e5fc; 
 }
 .item {
 	color: #ffeb3b;
 }
 .active {
 	color: #445deb;
+}
+a:hover {
+	color: #f50057;
+	cursor: pointer;
+	
 }
