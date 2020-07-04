@@ -1,7 +1,7 @@
 body {
   color: #e53935;
   /* background-color: #263238; */
-  background-color: #42a5f5;
+  /* background-color: #42a5f5; */
 }
 .app-wrapper {
   width: 1200px;
@@ -13,4 +13,9 @@ body {
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-row-gap: 10fr;
+}
+.app-wrapper-content{
+  grid-area: c;
+  background-color: mintcream;
+  height: 100vh;
 }
