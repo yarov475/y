@@ -6,6 +6,9 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialog from "./components/Dialog/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
+import Music from "./components/Music/Music";
+import Settings from "./components/Settings/Settings";
+import News from "./components/News/News";
 
 
 const App = (props) => {
@@ -19,6 +22,9 @@ const App = (props) => {
 
 <Route path='/dialog' component = {Dialog}/>
 <Route path= '/profile' component={Profile}/>
+          <Route path= '/news' component={News}/>
+          <Route path= '/music' component={Music}/>
+          <Route path= '/settings' component={Settings}/>
     </div>
     </div>
       </BrowserRouter>  )

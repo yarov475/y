@@ -6,8 +6,8 @@
 .item {
 	color: #ffeb3b;
 }
-.active {
-	color: #445deb;
+ .active {
+	color: goldenrod;
 }
 a:hover {
 	color: #f50057;
