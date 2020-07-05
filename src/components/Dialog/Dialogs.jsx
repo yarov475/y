@@ -4,32 +4,24 @@ import s from  './Dialog.module.css'
 
 const Dialog =(props)=>{
     return(
-        <div>
-            <div className="Dialogs">
-                <div className="dialog-items">
-                    <div className="dialog>Dima</div>
-                <div className="dialog>Vova</div>
-                    <div className="dialog>leha</div>
-                <div className="dialog>Jon</div>
-                    <div className="dialog>Micle</div>
-                <div className="dialog>Andru</div>
-
-
-                    <div className="Messages">
-                        <div className="message">Hi</div>
-                        <div className="message">Love</div>
-                        <div className="message">Hello</div>
-
+                   <div className={s.dialogs}>
+                <div className={s.dialogITems}>
+                    <div className={s.dialog + '' + s.active} >Dima</div>
+                <div className={s.dialog}>Vova</div>
+                    <div className={s.dialog}>leha</div>
+                <div className={s.dialog}>Jon</div>
+                    <div className={s.dialog}>Micle</div>
+                <div className={s.dialog}>Andru</div>
                 </div>
 
-
-
-
+                    <div className={s.messages}>
+                        <div className={s.dialog}>Hi</div>
+                        <div className={s.dialog}>Love</div>
+                        <div className={s.dialog}>Hello</div>
 
                 </div>
-            </div>
+                </div>
+    )
 
-        </div>
-    );
 }
 export default Dialog;

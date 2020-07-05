@@ -1,12 +1,17 @@
-Dialogs{
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+;
 
 }
 
+.dialogITems .dialog{
 
-.Dialog{
-    background-color: #0000ff;
 }
 
-.Messages{
+.messages{
+
+}
+.messages .message{
 
 }
