@@ -3,7 +3,6 @@
 	background-image: linear-gradient(166deg, #b3e5fc 10%, #942dd9 100%);
 	color: #ffffff;
 	grid-area: n;
- background-color: #b3e5fc; 
 }
 .item {
 	color: #ffeb3b;
@@ -12,8 +11,8 @@
 	color: goldenrod;
 }
  a{
-
-	 margin: 30px;
+	 margin-top: 40px;
+ ;margin: 30px;
 	 text-decoration: none;
 	 color: white;
  }
