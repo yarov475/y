@@ -13,25 +13,30 @@ const Message = (props)=>{
     return<div className={s.dialog}>{props.message}</div>
 
 }
-
+let DualogData = [
+    {id:1,name:'Dima'} ,
+    {id:2,name:'Sacha'}
+];
+let MessageData=[
+    {id:1, message:"hi, guy!!!!!"},
+    {id:2, message:"Coool"}
+]
 const Dialog =(props)=>{
     return(
 
                    <div className={s.dialogs}>
                 <div className={s.dialogITems}>
-                    <Dialogitem name ="Dmitry" id={"1"}></Dialogitem>
-                    <Dialogitem name ="Vova" id={"2"}></Dialogitem>
-                    <Dialogitem name ="Leha" id={"3"}></Dialogitem>
-                    <Dialogitem name ="Jon" id={"4"}></Dialogitem>
+                    <Dialogitem name ={DualogData[0].name} id={DualogData[0].id}></Dialogitem>
+                    <Dialogitem name ={DualogData[1].name} id={DualogData[1].id}></Dialogitem>
+
 
 
                 </div>
 
                     <div className={s.messages}>
-                        <Message message={"love yoy"}
-                        ></Message> <Message message={"very "}
-                        ></Message> <Message message={"much yoy"}
-                        ></Message>
+                        <Message message={MessageData[0].message}></Message>
+                        <Message message={MessageData[1].message}></Message>
+
                 </div>
                 </div>
     )
