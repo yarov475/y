@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
-import Dialog from "./components/Dialog/Dialogs";
+import Dialogs from "./components/Dialog/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
@@ -20,7 +20,7 @@ const App = (props) => {
       <div className="app-wrapper-content">
 
 
-        <Route path='/dialog'   render = { () =><Dialog/>}/>
+        <Route path='/dialog'   render = { () =><Dialogs dialogs={props.dialogs} messages ={props.messages}/>}/>
         <Route path= '/profile' render = { () => <Profile posts = {props.posts}/>}/>
         <Route path= '/news' render ={ ()=> <News/>}/>
         <Route path= '/music' render ={ () => <Music/>}/>
