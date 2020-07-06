@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+let posts=[
+    {id:1, message:"how are you?", likesCount:12},
+    {id:2, message:"helo Frirnd!!!", likesCount:15},
+    {id:3, message:"helo Frirnds!!!", likesCount:15}
+]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+
+    <App  posts = {posts}/>,
   </React.StrictMode>,
   document.getElementById('root')
 );
