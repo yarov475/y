@@ -11,7 +11,7 @@ import News from "./components/News/News";
 
 
 const App = (props) => {
-
+let Dialog=()=><dialogs/>
   return (
       <BrowserRouter>
     <div className="app-wrapper">
