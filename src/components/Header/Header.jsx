@@ -8,7 +8,7 @@ const Header = () => {
 			{/*<img src="./../img/kite.png"	></img>*/}
 
 
-			<div className={s.item}>MY FRIENDS</div>
+			<div className={s.item}>FRIENDS CORE</div>
 		</header>
 
 	);

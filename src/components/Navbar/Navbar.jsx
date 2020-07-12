@@ -4,8 +4,9 @@ import s from "./Navbar.module.css";
 import {NavLink} from "react-router-dom";
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 	return (
+
 		<nav className={s.nav} >
 
 			<div> <NavLink to = '/profile' activeClassName= {s.active}> Profile </NavLink></div >
@@ -17,7 +18,9 @@ const Navbar = () => {
 
 		</nav >
 
-	);
+
+
+);
 
 }
 export default Navbar;

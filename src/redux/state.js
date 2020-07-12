@@ -1,3 +1,5 @@
+import React from "react";
+
 let state = {
     profilePage: {
         posts: [
@@ -8,7 +10,7 @@ let state = {
     },
     dialogPage: {
             dialogs: [
-                {id: 1, name: 'Dima'},
+                {id: 1, name: 'Dima', src:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXFxUVFxcYFxoYFxUYFRUWFxUVFxcYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lICUtL"},
                 {id: 2, name: 'Sacha'}
             ],
 
@@ -16,8 +18,22 @@ let state = {
                 {id: 1, message: "hi, guy!!!!!"},
                 {id: 2, message: "Coool"}
             ]
-        }
+        },
+    sideBar: {
+        friends:[
+            {id:1, avatar:1},
+            {id:2, avatar:2}
+        ]
+    }
+    }
 
+    export let addPost = (postMessage)=>{
+    let newPost ={
+        id:5,
+        message:postMessage,
+        LikesCount: 345
+    }
+    state.profilePage.posts.push(newPost)
 
     }
 export default state;
