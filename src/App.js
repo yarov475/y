@@ -25,11 +25,10 @@ const App = (props) => {
         <Route path= '/profile' render = { () =>
             <Profile
                      profilePage = {props.state.profilePage}
-                     addPost ={props.addPost}
-                     updateNewPostText={props.updateNewPostText}
+                     dispatch = {props.dispatch}
             />}/>
-        <Route path= '/music' render ={ () => <Music/>}/>
-        <Route path= '/settings' render = { ()=> <Settings/>}/>
+        {/*<Route path= '/music' render ={ () => <Music/>}/>*/}
+        {/*<Route path= '/settings' render = { ()=> <Settings/>}/>*/}
     </div>
     </div>
       </BrowserRouter>  )
