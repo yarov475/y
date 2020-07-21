@@ -26,10 +26,6 @@ let store = {
             newMessageBody: " "
         },
         sideBar: {
-            friends:[
-                {id:1, avatar:1},
-                {id:2, avatar:2}
-            ]
         },
 
     },
