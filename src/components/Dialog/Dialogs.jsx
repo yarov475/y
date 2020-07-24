@@ -7,8 +7,8 @@ import Dialogitem from "./DialogsItem/Dialogitemtem";
 
 const Dialogs = (props) => {
     let state = props.dialogPage;
-    let DialogsElement = state.dialogs.map(d => <Dialogitem name={d.name} id={d.id}/>);
-    let MessagesElement = state.messages.map(m => <Message message={m.message}/>);
+    let DialogsElement = state.dialogs.map(d => <Dialogitem name={d.name} key = {d.id}  id={d.id}/>);
+    let MessagesElement = state.messages.map(m => <Message message={m.message} key = {m.id}/>);
     // let newPostElement=React.createRef();
     // // let addPost=()=>{
     // //     let text = newPostElement.current.value;
