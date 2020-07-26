@@ -9,6 +9,9 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import News from "./components/News/News";
 import DialogsContainer from "./components/Dialog/DialogsContainer";
+import Users from "./components/Users/Users";
+import UsersContainer from "./components/Users/UsersContainer";
+import Userscontainer from "./components/Users/UsersContainer";
 
 
 const App = (props) => {
@@ -24,13 +27,19 @@ const App = (props) => {
                            render={() => <DialogsContainer/>}/>
                     <Route path='/profile' render={() =>
                         <Profile/>}/>
+                    <Route path='/users'
+                           render={() =>
+                               <UsersContainer/>}/>
 
-                    {/*<Route path='/news' render={() => <News/>}/>*/}
-                    {/*<Route path= '/music' render ={ () => <Music/>}/>*/}
-                    {/*<Route path= '/settings' render = { ()=> <Settings/>}/>*/}
+                    {/*//*/}
+                    {/*// /!*<Route path='/news' render={() => <News/>}/>*!/*/}
+                    {/*// /!*<Route path= '/music' render ={ () => <Music/>}/>*!/*/}
+                    {/*// /!*<Route path= '/settings' render = { ()=> <Settings/>}/>*!/*/}
                 </div>
             </div>
-        </BrowserRouter>)
+        </BrowserRouter>
+
+    )
 
 }
 export default App;

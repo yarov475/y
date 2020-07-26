@@ -11,11 +11,7 @@ const Profile = (props) => {
         <div>
             <ProfileInfo/>
             <MyPostsContainer/>
-
         </div>
-
-
     );
-
 }
 export default Profile;
