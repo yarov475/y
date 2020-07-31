@@ -5,4 +5,9 @@
 }
 .selectedPage{
     font-weight: bold;
+    font-size: 18px;
+    color: goldenrod;
+}
+.pages{
+    cursor: pointer;
 }
