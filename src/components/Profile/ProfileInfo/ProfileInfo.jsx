@@ -21,7 +21,6 @@ const ProfileInfo = (props) => {
 
 <p>{props.profile.fullName}</p>
 
-<p> id {props.profile.userId}</p>
 
 
 

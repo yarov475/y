@@ -7,16 +7,16 @@ let Users = (props) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
     let pages = [];
-   for (let i = 1; i <= pagesCount; i++) {
-     pages.push(i);
-}
+    for (let i = 1; i <= pagesCount; i++) {
+        pages.push(i);
+    }
 
     return <div>
         <div className={styles.pages}>
             {pages.map(p => {
                 return <span className={props.currentPage === p && styles.selectedPage}
                              onClick={(e) => {
-                                props.onPageChanged(p);
+                                 props.onPageChanged(p);
                              }}> {p} </span>
             })}
         </div>
@@ -26,7 +26,7 @@ let Users = (props) => {
             props.users.map(u => <div key={u.id}>
         <span>
             <div>
-                <NavLink to = {'/profile/'+u.id}>
+                <NavLink to={'/profile/' + u.id}>
                 <img src={u.photos.small != null ? u.photos.small : userPhoto}
                      className={styles.userPhoto}/>
                 </NavLink>

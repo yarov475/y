@@ -25,7 +25,7 @@ const App = (props) => {
 
                     <Route path='/dialog'
                            render={() => <DialogsContainer/>}/>
-                    <Route path='/profile' render={() =>
+                    <Route path='/profile/:userId?' render={() =>
                         <ProfileContainer/>}/>
                     <Route path='/users'
                            render={() =>
