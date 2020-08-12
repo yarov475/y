@@ -13,13 +13,14 @@ import DialogsContainer from "./components/Dialog/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import Userscontainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileInfo/profileContainer";
+import HeaderContainer from "./components/Header/HeaderContainer";
 
 
 const App = (props) => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
-                <Header/>
+                <HeaderContainer/>
                 <Navbar/>
                 <div className="app-wrapper-content">
 
